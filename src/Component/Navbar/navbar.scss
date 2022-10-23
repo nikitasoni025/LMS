@@ -1,0 +1,138 @@
+@import '../../Assests/SCSS/colors';
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+// *******NAVBAR STYLING START**********
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  // border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primaryColor;
+  color: $secondaryColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+
+// ***********************LEFT SIDE OF NAVBAR*************
+.left {
+  width: 50%;
+  height: 100%;
+  // border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+
+}
+
+.logo {
+  margin-left: 30px;
+  // border: 1px solid;
+  // padding: 8px 40px;
+}
+
+.searchbar {
+  /* padding: 10px 60px; */
+  width: 50%;
+  height: 35px;
+  // border: 1px solid  grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  overflow: hidden;
+  background: $secondaryColor;
+
+
+  input {
+    border: none;
+    width: calc(100% - 35px);
+    height: 100%;
+    padding-left: 15px;
+    outline: none;
+
+  }
+
+  button {
+    border: none;
+    width: 35px;
+    height: 100%;
+    background: white;
+
+  }
+}
+
+// ********************RIGHT SIDE OF NAVBAR**************************
+
+.right {
+  width: 30%;
+  height: 100%;
+  // border: 1px solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.login_signup {
+  // border: 1px solid;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 120px;
+
+  button {
+    padding: 0px 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.299);
+    position: relative;
+    overflow: hidden;
+
+    
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 0;
+      // border: 1px solid white;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.532);
+      transition: 0.5s;
+
+    }
+
+    
+
+    &:hover:before {
+     
+      transition: 0.5s ease;
+      left: 0;
+
+    }
+
+  }
+
+
+}

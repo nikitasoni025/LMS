@@ -1,0 +1,152 @@
+.homepagemain {
+    width: 100%;
+    // border: 1px solid red;
+
+}
+
+.homenevabar {
+    width: 100%;
+
+}
+
+// **********HEADER STYLING START************
+
+.homeheader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../Assests/Images/Headerbg.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+// ************HEADER CONTENT STYLING****************
+
+.homehead_content {
+    width: 80%;
+    font-weight: 900;
+    color: white;
+
+    h1 {
+        font-size: 90px;
+        font-weight: 600;
+        color: white;
+        overflow: hidden;
+        display: inline-block;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #f55e23;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+
+    h3 {
+        padding-top: 20px;
+        font-size: 25px;
+        font-family: 'Gothic A1', sans-serif;
+
+    }
+
+    // **BUTTON STYLING****
+
+    button {
+        padding: 25px 50px;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f55e23;
+        border: none;
+        border-radius: 4px;
+        color: white;
+
+        // *** BUTTON ARROW STYLING****
+
+        .arrowright {
+            animation: leri 1s infinite alternate-reverse ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    }
+}
+
+// *******BANNER STYLING START
+
+
+.homebanner{
+    width: 100%;
+    height: 250px;
+    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .quote{
+        text-align: center;
+        line-height: 60px;
+        h1{
+            font-size: 3vw;
+        }
+        pre{
+            font-size: 1vw;
+            font-weight: 600;
+            color: gray;
+        }
+
+    } 
+}
+
+// ****BUTTON ARROW ANIMATION****
+
+@keyframes leri {
+    0% {
+        translate: -5px 0px 0px;
+    }
+
+    100% {
+        translate: 5px 0px 0px;
+
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #f55e23;
+    }
+}
+
+
+
